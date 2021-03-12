@@ -91,17 +91,22 @@ function onClickSubmitFeedBack() {
 }
 
 function onFocusInTextInput() {
-  document.getElementById("comment-feedback").onfocus = () => {
+  let inputElement = document.getElementById("comment-feedback");
+  inputElement.onfocus = () => {
     document.querySelector(
       ".modal.negative-rate.complaint-step .keyword-list"
     ).style.display = "none";
   };
 
-  document
-    .getElementById("comment-feedback")
-    .addEventListener("focusout", () => {
-      document.querySelector(
-        ".modal.negative-rate.complaint-step .keyword-list"
-      ).style.display = "flex";
-    });
+  inputElement.addEventListener("focusout", () => {
+    document.querySelector(
+      ".modal.negative-rate.complaint-step .keyword-list"
+    ).style.display = "flex";
+  });
+
+  inputElement.addEventListener("keydown", (event) => {
+    if (event.key && event.key.toLocaleLowerCase() === "enter") {
+      inputElement.blur();
+    }
+  });
 }
