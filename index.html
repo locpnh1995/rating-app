@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating App</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="components/modal/modal.css" />
+
+    <link rel="stylesheet" href="components/ratingModal/ratingModal.css" />
+    <link
+      rel="stylesheet"
+      href="components/ratingModal/positiveRate/positiveRate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="components/ratingModal/negativeRate/negativeRate.css"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="open-dialog-button" class="button button-primary">대화 열기</div>
+
+    <!-- INITIAL  -->
+    <div class="modal rating-modal question-step">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <i class="icon question-emoji-icon"></i>
+          <div class="main-text">스푼이 마음에 드시나요?</div>
+          <div class="rating-stars"></div>
+        </div>
+        <div class="close-button"><i class="icon close-icon"></i></div>
+      </div>
+    </div>
+
+    <!-- POSITIVE -->
+
+    <div class="modal rating-modal positive-rate final-positive-step">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <i class="icon happy-emoji-icon"></i>
+          <div class="main-text">소중한 의견 감사합니다!</div>
+          <div class="text">
+            더 나은 서비스를 위해 노력하는 스푼이 될게요. 스토어에 칭찬 한마디
+            남겨주시겠어요?
+          </div>
+        </div>
+        <div class="close-button"><i class="icon close-icon"></i></div>
+
+        <div class="modal-footer">
+          <div class="actions">
+            <div class="button button-secondary later-button">
+              나중에 할래요
+            </div>
+            <div class="button button-primary to-store-button">스토어 가기</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEGATIVE FEEDBACK STEP-->
+
+    <div class="modal rating-modal negative-rate complaint-step">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="negative-emoji">
+            <i class="icon"></i>
+            <div class="main-text"></div>
+          </div>
+
+          <div class="rated-stars"></div>
+          <div class="text">어떤 점이 불편하셨나요?</div>
+          <div class="keyword-list"></div>
+          <div class="input-wrapper">
+            <input
+              id="comment-feedback"
+              class="comment-input"
+              type="text"
+              placeholder="자유롭게 의견을 보내주세요."
+            />
+          </div>
+          <div class="button-wrapper">
+            <div class="button button-primary submit-feedback-button">
+              제출하기
+            </div>
+          </div>
+        </div>
+        <div class="close-button"><i class="icon close-icon"></i></div>
+      </div>
+    </div>
+
+    <!-- NEGATIVE FINAL STEP -->
+
+    <div class="modal rating-modal negative-rate final-step">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <i class="icon negative-finish-emoji-icon"></i>
+          <div class="main-text">소중한 의견 감사합니다!</div>
+          <div class="text">
+            의견을 반영하여 더 만족하실 수 있는 스푼이 되도록 노력하겠습니다.
+          </div>
+        </div>
+        <div class="close-button"><i class="icon close-icon"></i></div>
+      </div>
+    </div>
+
+    <script src="./components/modal/modal.js"></script>
+    <script src="./components/ratingModal/ratingModal.js"></script>
+    <script src="./components/ratingModal/negativeRate/negativeRate.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

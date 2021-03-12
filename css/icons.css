@@ -1,0 +1,41 @@
+i.icon {
+  display: inline-block;
+
+  width: 14px;
+  height: 14px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+i.close-icon {
+  background-image: url(../assets/icons/close-icon.svg);
+}
+
+i.question-emoji-icon {
+  background-image: url(../assets/icons/question-emoji-icon.svg);
+}
+
+i.grey-star-icon {
+  background-image: url(../assets/icons/grey-star-icon.svg);
+}
+
+i.yellow-star-icon {
+  background-image: url(../assets/icons/yellow-star-icon.svg);
+}
+
+i.happy-emoji-icon {
+  background-image: url(../assets/icons/happy-emoji-icon.svg);
+}
+
+i.sad-emoji-icon {
+  background-image: url(../assets/icons/sad-emoji-icon.svg);
+}
+
+i.not-bad-emoji-icon {
+  background-image: url(../assets/icons/not-bad-emoji-icon.svg);
+}
+
+i.negative-finish-emoji-icon {
+  background-image: url(../assets/icons/negative-finish-emoji-icon.svg);
+}
