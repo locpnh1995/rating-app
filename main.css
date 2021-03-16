@@ -257,7 +257,7 @@ i.negative-finish-emoji-icon {
 
 .modal-dialog {
   position: relative;
-  margin: 20px;
+  margin: 11vw;
 
   background-color: #fff;
 
@@ -265,6 +265,12 @@ i.negative-finish-emoji-icon {
 
   overflow: auto;
   max-height: 90vh;
+}
+
+@media only screen and (max-width: 280px) {
+  .modal-dialog {
+    margin: 7vw;
+  }
 }
 
 .modal-content {
@@ -290,7 +296,7 @@ i.negative-finish-emoji-icon {
   flex-direction: column;
   align-items: center;
 
-  padding: 20px;
+  padding: 5vw;
 }
 
 .modal.rating-modal .question-emoji-icon {
@@ -299,7 +305,7 @@ i.negative-finish-emoji-icon {
 }
 
 .modal.rating-modal .main-text {
-  margin-top: 10px;
+  margin-top: 18px;
   font-weight: bold;
   font-size: 17px;
   text-align: center;
